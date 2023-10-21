@@ -1,4 +1,4 @@
--- lug1a
+-- modded - lug1a
 
 -- SmoothScroll module
 -- By boatbomber (2019)
@@ -9,7 +9,7 @@ if not RS:IsClient() then
 	error("SmoothScroll can only be used on the client")
 end
 
-local PlayerGui	= game.CoreGui
+local PlayerGui	= game.Players.LocalPlayer:WaitForChild("PlayerGui")
 local Mouse		= game.Players.LocalPlayer:GetMouse()
 local ipairs,pairs	= ipairs,pairs
 
